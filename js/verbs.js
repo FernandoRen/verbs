@@ -1,0 +1,1 @@
+let verbs = ["open", "close"];
