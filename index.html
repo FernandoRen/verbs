@@ -8,39 +8,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"> 
-    <title>Hello, world!</title>
+    <title>Learning verbs!</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a id="p-1" class="navbar-brand" href="#">Verbs</a>
-          <p id="p-2" class="navbar-brand">27</p>
+          <a id="p-1" class="navbar-brand" href="#">Verbs to learn easily</a>
+          <p id="verbs-counter" class="navbar-brand">0/0</p>
         </div>
-      </nav>
-      <div class="text-center" id="next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" id="next">
-          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-        </svg>
-      
-      <h1 id="showVerb">Play to Start</h1>
+    </nav>
+      <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" id="next">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+      </div>
+
+
+    <h1 id="showVerb">Play to Start</h1>
+
+    <div class="container text-center">
+      <div id="verbs-container">
+        <div id="showImage"></div>
+        <br>
+        <audio id="showAudio"></audio>
+        <p id="first-verb" class="verbs-Answer"></p>
+        <p id="second-verb" class="verbs-Answer"></p>
+        <p id="third-verb" class="verbs-Answer"></p>
+        <p id="fourth-verb" class="verbs-Answer"></p>
+      </div>
+
+      <small class="counter">
+        <span id="all-right-counter" class="mb-2 d-block"></span>
+        <span id="all-wrong-counter" class="mt-2 mb-2 d-block"></span>
+      </small>
+
+      <button class="btn btn-primary mt-2" id="restart">Restart Game</button>
     </div>
 
-    <div id="verbs-container">
-      <div id="showImage"></div>
-      <audio id="showAudio" src=""></audio>
-      <p id="firstVerb" class="verbs-Answer"></p>
-      <p id="secondVerb" class="verbs-Answer"></p>
-      <p id="thirdVerb" class="verbs-Answer"></p>
-      <p id="fourthVerb" class="verbs-Answer"></p>
-    </div>
+    
 
-    <small class="counter">
-      <span id="all-right-answers"></span>
-    </small>
-
-    <div id="verbsContainer">
-        
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="js/verbs.js"></script>
