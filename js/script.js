@@ -114,7 +114,7 @@ function ponerVerbo(){
 
     if (lastPosition >= 0) {
         var just_position = lastPosition + 1;
-        verbsCounter.innerHTML = ` ${just_position}' / '${totalNumberOfVerbs}`; //corregido
+        verbsCounter.innerHTML = ` ${just_position} / ${totalNumberOfVerbs}`; //corregido
         allRightCounter.innerHTML = "Right Answers: " + rightAnswerCounter;
         allWrongCounter.innerHTML = "Wrong Answers: " + wrongAnswerCounter;
         showVerb.innerHTML = verbs[randomPosition];
